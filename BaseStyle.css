@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family: "Bookman Old Style", sans-serif;
+}
+html{
+
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin:0;
+    padding: 0;
+    /*background*/
+    background-image: url("Images/BackgroundPhoto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /*grid*/
+    display: grid;
+    text-align: center;
+    grid-template-columns: 2fr 2fr 4fr 2fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: ". titol nav ."
+                ". main main ."
+                ". foot foot .";
+}
+
+li{
+    list-style: none;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+li:hover{
+    font-size: large;
+}
+a{
+    text-decoration: none;
+    color: navajowhite;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+a:hover{
+    color: orange;
+}
+
+.listLinks{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    font-size: 1.5rem;
+    color: antiquewhite;
+    font-weight: bold;
+}
+.titol{
+    grid-area: titol;
+    font-size: larger;
+    color: antiquewhite;
+    font-weight: bold;
+    padding-left: 10px;
+    text-shadow: 0 0 10px #000000;
+}
+
+nav{
+    grid-area: nav;
+    width: 100%;
+
+    text-shadow: 0 0 10px #000000;
+}
+
+nav, ul{
+    display: flex;
+    gap: 2rem;
+}
+
