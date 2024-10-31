@@ -1,5 +1,7 @@
 main{
     grid-area: main;
+    display: flex;
+    flex-direction: column;
     border: rgb(255,165,0,.2);
     border-style: groove;
     border-radius: 5px;
@@ -42,6 +44,12 @@ p,article{
     text-justify: auto;
 }
 
+.tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 
 .climatic, .eco, .social{
     color: navajowhite;
@@ -69,6 +77,10 @@ footer{
 
 @media (max-width: 600px) {
 
+    .tabs{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
