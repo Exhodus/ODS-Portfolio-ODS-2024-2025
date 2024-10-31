@@ -67,4 +67,9 @@ footer{
     grid-area: foot;
 }
 
+@media (max-width: 600px) {
+
+
+}
+
 

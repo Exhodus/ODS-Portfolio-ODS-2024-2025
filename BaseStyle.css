@@ -81,3 +81,22 @@ nav, ul{
     gap: 2rem;
 }
 
+
+@media (max-width: 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 4fr 1fr;
+        grid-template-areas: "titol"
+                "nav"
+                "main"
+                "footer";
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
