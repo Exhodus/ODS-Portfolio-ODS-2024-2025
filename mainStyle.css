@@ -9,8 +9,29 @@ main{
     text-align: justify;
 }
 
+article{
+    border-top: darkorange solid 3px;
+    display: flex;
+    flex-direction: column;
+}
+section{
+    border-top: darkorange solid 1px;
+}
+img{
+    height: 175px;
+    width: 300px;
+    float: left;
+    margin: 15px;
+}
+div{
+    margin: 15px;
+}
 i{
     color: orangered;
+}
+
+span{
+    padding: 0;
 }
 
 h2, p{
@@ -21,59 +42,7 @@ p,article{
     text-justify: auto;
 }
 
-#tabs{
-    position:relative;
-}
-li.pestaña{
-    position: fixed;
-    display: none;
-}
 
-.pestaña + a{
-    display: block;
-    float: left;
-    height: 32px;
-    line-height: 32px;
-    padding: 0 10px;
-    border: 1px solid #ddd;
-    background-color: #eee;
-    margin-bottom: -1px;
-    border-radius: 8px 8px 0 0;
-    margin-right: 10px;
-    text-decoration:none;
-}
-
-.pestaña:target + a{
-    background-color: #eeeeee;
-    border-bottom-color: navajowhite;
-}
-
-#climatic, #eco, #social{
-    position: absolute;
-    border: none;
-    clear: both;
-    overflow: hidden;
-}
-
-#climatic > div, #eco > div, #social> div{
-   opacity: 0;
-    transition: all 0.5s ease;
-    padding: 30px;
-}
-
-#un:target ~ #climatic, #dos ~ #eco, #tres ~ #social{
-    position:static;
-    border: 1px solid #ddd;
-}
-
-#un:target ~ #climatic > div, #dos ~ #eco > div, #tres ~ #social > div{
-    opacity: 1;
-    transition: all 1s ease;
-}
-
-
-
-/*
 .climatic, .eco, .social{
     color: navajowhite;
     transition: .5s;
@@ -88,8 +57,8 @@ li.pestaña{
             0
             0
             50px/*blur*/
-            /*1px/*spread*/
- /*           rgba(255,69,0,.3);
+            1px/*spread*/
+         rgba(255,69,0,.3);
     color: navajowhite;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
