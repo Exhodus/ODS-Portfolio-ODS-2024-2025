@@ -96,26 +96,59 @@ main{
     flex-direction: column;
     align-items: center;
     transition: 0.2s;
+    padding-bottom: 10px;
 }
 
 .pages:hover{
     scale: 1.2;
 }
 
-img{
+.icon{
+    width: 450px;
+    height: 190px;
+    border-radius: 10px;
+
+
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    transform-origin: center;
+}
+
+@keyframes logo {
+    0%{
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+    50%{
+        opacity: 0.75;
+        transform: scale(0.75);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.menuImg{
     height: 175px;
     width: 300px;
     margin: 15px;
+
+    border-radius: 10px;
 }
 
 a{
     text-decoration: none;
     color: navajowhite;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-
+    transition: 0.3s;
 }
-a:hover{
+.pages:hover{
     color: orange;
+    background-color: rgba(255,255,255, .4);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
 }
 
 
