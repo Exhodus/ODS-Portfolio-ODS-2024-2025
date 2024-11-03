@@ -154,7 +154,7 @@ a{
 
 
 footer{
-    margin: 30px;
+    padding: 30px;
     grid-area: foot;
     color:navajowhite;
     text-shadow: 0 0 10px #000000;
@@ -180,15 +180,18 @@ nav, ul{
 @media (max-width: 600px) {
     body{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 4fr 1fr;
+        grid-template-rows: 1fr 4fr 1fr;
         grid-template-areas: "titol"
                 "main"
-                "main"
-                "footer";
+                "foot";
     }
 
     main{
         flex-direction: column;
+    }
+
+    h1{
+
     }
 
 }
