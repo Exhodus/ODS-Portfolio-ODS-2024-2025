@@ -23,7 +23,7 @@ body{
     display: grid;
     text-align: center;
     grid-template-columns: 2fr 2fr 4fr 2fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 5% 4fr 5%;
     grid-template-areas: ". titol titol ."
                 ". main main ."
                 ". foot foot button";
