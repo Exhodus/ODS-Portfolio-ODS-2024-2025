@@ -185,6 +185,7 @@ main{
     grid-area: main;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     border: rgb(255,165,0,.2) groove;
     border-radius: 5px;
     padding: 20px;
@@ -283,6 +284,8 @@ article{
     padding: 10px;
 }
 
+
+
 .article1:hover, .article2:hover, .article3:hover{
     font-size: medium;
     background-color: rgba(0, 0, 0, .65);
@@ -342,10 +345,10 @@ tr:hover{
 @media (max-width: 800px) {
     body{
         grid-template-columns: 100%;
-        grid-template-rows:5% 90% 5%;
+        grid-template-rows:1fr 93% 1fr;
         grid-template-areas: "titol"
                 "main"
-                "footer";
+                "foot";
     }
 
     header{
