@@ -39,6 +39,7 @@ footer{
     color:navajowhite;
     text-align: center;
     display: flex;
+    flex:1;
     justify-content: center;
     align-items: center;
     font-size: larger;

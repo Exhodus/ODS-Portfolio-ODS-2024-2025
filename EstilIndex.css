@@ -166,6 +166,7 @@ footer{
     text-shadow: 0 0 10px #000000;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: larger;
@@ -188,7 +189,7 @@ nav, ul{
 @media (max-width: 600px) {
     body{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-rows: 25% 4fr 1fr;
         grid-template-areas: "titol"
                 "main"
                 "foot";
@@ -198,8 +199,9 @@ nav, ul{
         flex-direction: column;
     }
 
-    h1{
-
+    header{
+        scale: 0.7;
+        padding-left: 0;
     }
 
 }
