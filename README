@@ -1,0 +1,74 @@
+# Sostenibilitat en Acció
+
+Aquest projecte te com a objectiu que conegueu a fons les labors que da ecoSoft de cara als ODS
+
+## Descripció
+
+MAIN:
+La página inicia amb un índex on veiem 5 fotografies que ens envien a 5 pagines diferents. Totes tenen un hover que
+amplifica la "carta" i fa que las lletres siguin mes llegibles.Aquesta pàgina te un grid en vertical amb només 1
+columna i 3 files, sent aquestes el header, el main i el footer.El titol i subtitol tenen una animació de translació
+cap al centre i el logo de l'empresa fa un fade-in fins a col·locar-se en mig. A més, al fer-se responsive el títol es
+fa més petit per tal d'acomodar la vista del usuari i les "cartes" passan d'un flex en linea a un en columna.
+
+PAG 1, 2, 3, 4, 5
+
+Totes les pàgines tenen el mateix layout amb un grid de header y nav amunt, seguit per el main abaix i sota el main tenim
+el footer amb un botó a la seva dreta per tornar a pujar a munt.
+
+PAG 1,2:
+
+Els titols dels desafiaments son clicables i et porten al article que parla sobre cada un dintre de la mateixa pàgina.
+Aixi mateix els ODS son clicables que están enllaçats amb las pàgines oficials dels ODS en questió. Cada article
+te un hover que fica un border-top de color tronja, fa que el background sigui més fosc i surt un box-shadow de color
+tronja també que dona més importancia al que s'está llegint. Tot aixó pensant en l'experiencia del usuari i com
+sería més cómoda la seva interacció i lectura.
+
+Pag 3:
+
+Igual que a les anteriors, el petit paràgraf que es troba a la part superior te un hover que fa el mateix efecte.
+La taula que trobem a continuació te un hover a les files, on si passem el ratolí per sobre s'iluminará tota la fila
+amb un color que, personalment, crec que es molt bonic i saludable per a la vista.  La taula també compta amb el hover
+de background mes fosc i box-shadow.
+
+Pag 4:
+
+Igual que a la pàgina 3, el paràgraf d'amunt es exactament la mateixa mecànica. Pero aquí trobem una mecànica nova.
+Els 3 títols que trobem en mig de la pàgina tenen tots un hover. Aquest hover el que fa es que aparegui el text
+que está amagat. Dintre dels elements de llista <li> hi ha un <div> amb l'explicació. Te un max-height de 0px i un
+overflow hidden, per tal de que no es vegi a la pàgina. A la transició l'hi he ficat un max-width de 200px.
+Vaig probar a fer-ho amb display:none, pero em donaba problemes a l'hora de posar-li característiques de transició.
+
+Aquesta pàgina, a més, te el botó de la màgia.
+
+Pag 5:
+
+l'unic diferent de aquesta pàgina son els títols de cada acció dintre dels articles. Volía fer més coses rebuscades
+pero no m'encaixaven amb la estética del projecte així que ho vaig descartar.
+
+## Com començar
+
+Segueix aquests passos per veure la pàgina web localment:
+
+1. Clona el repositori:
+    El meu usuari de github es Exhodus.
+    https://github.com/Exhodus/ODS-Portfolio-ODS-2024-2025.git
+    ```
+
+2. Accedeix a la carpeta del projecte:
+    ```
+    cd sostenibilitat-en-accio
+    ```
+
+3. Obre el fitxer `main.html` al teu navegador per veure la pàgina web localment.
+
+## Tecnologies
+
+- HTML5
+- CSS3
+
+
+## Autors
+
+- Xavi García Burgos https://github.com/Exhodus
+
